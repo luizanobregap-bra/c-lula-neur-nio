@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #b2bdeb;
+    color: #f4f5f7;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+.topo {
+    background-color: #172d50;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #a9a0ed;
+}
+
+.topo h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.topo p {
+    color: #d0d7e8;
+    font-size: 14px;
+}
+
+/* MENU PRINCIPAL */
+
+.menu {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu a {
+    color: #bbc3f0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #4d457e;
+}
+
+/* ==========================================
+   APRESENTAÇÃO INICIAL
+========================================== */
+
+.inicio {
+    min-height: 490px;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(120deg, #e8edff, #f5eaff);
+}
+
+.inicio-texto {
+    max-width: 570px;
+    flex: 1;
+}
+
+.etiqueta {
+    color: #7165bd;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.inicio h1,
+.inicio h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #172d50;
+}
+
+.inicio h1 span,
+.inicio h2 span {
+    color: #8172d0;
+}
+
+.inicio p {
+    color: #606b82;
+    margin-bottom: 20px;
+}
+
+.inicio-imagem {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background: #b2bedb;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #493e91;
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   SEÇÕES
+========================================== */
+
+.secao {
+    padding: 75px 10%;
+}
+
+.secao-clara {
+    background-color: #eff1fa;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #172d50;
+}
+
+.titulo-secao span {
+    color: #8273cb;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    color: #172d50;
+    font-size: clamp(25px, 4vw, 34px);
+    margin: 10px 0;
+}
+
+.titulo-secao p {
+    color: #778096;
+    font-size: 15px;
+}
+
+/* ==========================================
+   CARTÃO DE INTRODUÇÃO
+========================================== */
+
+.cartao-introducao {
+    background: rgb(245, 185, 161);
+    border-radius: 16px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    box-shadow: 0 5px 25px rgba(40, 48, 90, 0.06);
+}
+
+.texto-introducao {
+    flex: 1;
+}
+
+.texto-introducao p {
+    margin-bottom: 15px;
+    color: #626d81;
+}
+
+.texto-introducao h3 {
+    color: #172d50;
+    margin-bottom: 12px;
+}
+
+.destaque {
+    background: #eeeaff;
+    border-left: 5px solid #8877d3;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 310px;
+}
+
+.destaque span {
+    color: #7768bd;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.destaque h3 {
+    color: #27385b;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* ==========================================
+   GRADE DE CARTÕES
+========================================== */
+
+.grade-cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cartao {
+    background: rgb(245, 213, 199);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(40, 48, 90, 0.05);
+    border: 1px solid #e9eaf3;
+    transition: 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(40, 48, 90, 0.10);
+}
+
+.cartao h3 {
+    color: #293e67;
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.cartao p {
+    color: #6d778a;
+    font-size: 14px;
+}
+
+.cartao-destaque {
+    border-top: 4px solid #8d80d4;
+}
+
+/* NÚMEROS */
+
+.numero {
+    background: #e9e5ff;
+    color: #7161bb;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* ==========================================
+   SUBSTÂNCIA BRANCA E CINZENTA
+========================================== */
+
+.substancia {
+    text-align: center;
+}
+
+.amostra {
+    height: 9px;
+    width: 75px;
+    margin: 0 auto 20px;
+    border-radius: 20px;
+}
+
+.branca {
+    background: #e5e6eb;
+    border: 1px solid #c8cbd4;
+}
+
+.cinzenta {
+    background: #858b9a;
+}
+
+/* ==========================================
+   EQUIPE
+========================================== */
+
+.equipe .cartao {
+    text-align: center;
+    border-bottom: 4px solid #a59be8;
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+.rodape {
+    background: #172d50;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.rodape h3 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+    color: #d0d7e8;
+    font-size: 13px;
+}
+
+.rodape span {
+    display: block;
+    margin-top: 20px;
+    color: #aebbd2;
+    font-size: 12px;
+}
+
+/* ==========================================
+   RESPONSIVIDADE - TABLETS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .inicio-texto {
+        max-width: 100%;
+    }
+
+    .inicio-imagem {
+        width: 100%;
+    }
+
+    .inicio-imagem img {
+        max-width: 320px;
+    }
+
+    .secao {
+        padding: 60px 7%;
+    }
+
+    .grade-cartoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================
+   RESPONSIVIDADE - CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+    .topo {
+        padding: 20px 5%;
+    }
+
+    .topo h1 {
+        font-size: 26px;
+    }
+
+    .menu {
+        gap: 12px 18px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .inicio {
+        padding: 45px 6%;
+        gap: 25px;
+    }
+
+    .inicio h1,
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .inicio-imagem img {
+        max-width: 260px;
+    }
+
+    .secao {
+        padding: 50px 6%;
+    }
+
+    .cartao-introducao {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .destaque {
+        max-width: 100%;
+    }
+
+    .grade-cartoes {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cartao {
+        padding: 25px;
+    }
+
+    .titulo-secao {
+        margin-bottom: 30px;
+    }
+
+    .rodape {
+        padding: 28px 15px;
+    }
+}
+
+/* ==========================================
+   CELULARES PEQUENOS
+========================================== */
+
+@media (max-width: 380px) {
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+    .inicio h1,
+    .inicio h2 {
+        font-size: 26px;
+    }
+
+    .botao {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+    .cartao {
+        padding: 20px;
+    }
+}
